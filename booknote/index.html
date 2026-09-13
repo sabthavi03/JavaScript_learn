@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNote</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="navbar">
+        <h1>BookNote</h1>
+    </div>
+    
+    <div class="container">
+        <div class="book_container">
+            <h2>48 laws of Power</h2>
+            <h5>Robert Green</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam dignissimos, vero officia illum excepturi iusto maxime perferendis veritatis nemo earum reprehenderit alias aliquam consequatur. Odio eius repudiandae iusto. Nesciunt, consequatur?</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="popup_overlay"></div>
+    <div class="popup_box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book_title_input">
+            <input type="text" placeholder="Book Author" id="book_author_input">
+            <textarea placeholder="Short Description" id="book_description_input"></textarea>
+            <button id="add_book">Add</button>
+            <button id="cancel_popup">Cancel</button>
+
+        </form>
+    </div>
+
+
+
+    <button class="add_button" id="add_popup_button">+</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
